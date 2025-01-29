@@ -50,22 +50,24 @@ erDiagram
 ```
 
 ```mermaid
-mindmap
-  root((Resumo do Projeto))
-    Funcionalidades
-      "Gerenciamento de Estoque"
-        - Cadastro de produtos
-        - Controle de quantidades
-        - Organização por categorias
-      "Processamento de Vendas"
-        - Registro de vendas
-        - Cálculo automático de valores
-        - Emissão de comprovantes
-      "Gestão de Pagamentos"
-        - Suporte a múltiplos métodos de pagamento
-        - Registro de pagamentos vinculados às vendas
-      "Controle de Usuários"
-        - Cadastro e autenticação de usuários
-        - Controle de permissões de acesso
+graph TD;
+    A[Resumo do Projeto] --> B[Gerenciamento de Estoque];
+    B --> B1[Cadastro de produtos];
+    B --> B2[Controle de quantidades];
+    B --> B3[Organização por categorias];
+
+    A --> C[Processamento de Vendas];
+    C --> C1[Registro de vendas];
+    C --> C2[Cálculo automático de valores];
+    C --> C3[Emissão de comprovantes];
+
+    A --> D[Gestão de Pagamentos];
+    D --> D1[Suporte a múltiplos métodos de pagamento];
+    D --> D2[Registro de pagamentos vinculados às vendas];
+
+    A --> E[Controle de Usuários];
+    E --> E1[Cadastro e autenticação de usuários];
+    E --> E2[Controle de permissões de acesso];
+
 ```
 
